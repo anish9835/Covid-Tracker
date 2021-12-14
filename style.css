@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F7F7F7;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 8px 40px 0 40px;
+    height: 55px;
+    transition: 0.3s all ease;
+}
+
+.nav-menu.sticky {
+    background: #e7f1ff;
+    z-index: 5;
+}
+
+.nav-menu .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu .content .coronaLogo #logo {
+    width: 25px;
+    height: 25px;
+    animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.nav-menu .content .coronaLogo #live-stat {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-menu .content .coronaLogo #live-stat.dark {
+    color: #000;
+}
+
+.nav-menu .content .menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu .content .menu-list li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-menu .content .menu-list .link {
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-menu .content .menu-list .link.dark {
+    color: #000;
+}
+
+.nav-menu .content .menu-list .link.dark:hover {
+    color: #FF9900;
+}
+
+.nav-menu .content .menu-list li a:hover {
+    color: #FF9900;
+}
+
+.nav-menu .content .icon {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.nav-menu .menu-list .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.banner-img {
+    background: url('/images/Background1.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+@media(max-width:868px) {
+    .nav-menu {
+        padding-top: 5px;
+    }
+    body.disable {
+        overflow: hidden;
+    }
+    .nav-menu .content .icon {
+        display: block;
+    }
+    .nav-menu .content .icon.hide {
+        display: none;
+    }
+    .nav-menu .content .menu-list {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        max-width: 450px;
+        left: -100%;
+        top: 0%;
+        display: block;
+        text-align: center;
+        padding: 40px 0;
+        background: #e7f1ff;
+        transition: 0.3s all ease;
+    }
+    .nav-menu.show .content .menu-list {
+        left: 0%;
+    }
+    .nav-menu .content .menu-list li {
+        margin-top: 35px;
+    }
+    .nav-menu .content .menu-list li a {
+        color: #000 !important;
+        font-size: 23px;
+        margin-left: -120%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .nav-menu.show .content .menu-list li a {
+        margin-left: 0%;
+    }
+    .nav-menu .content .coronaLogo {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:450px) {
+    .nav-menu {
+        padding-top: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .nav-menu .content .coronaLogo {
+        margin-top: 10px;
+    }
+    .nav-menu .content .coronaLogo #logo {
+        width: 20px;
+        height: 20px;
+    }
+    .nav-menu .content .coronaLogo #live-stat {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:350) {
+    .nav-menu .content .coronaLogo #logo {
+        width: 15px;
+        height: 15px;
+    }
+    .nav-menu .content .coronaLogo #live-stat {
+        font-size: 1rem;
+    }
+}
+
+
+/* NAV BAR ENDED HERE */
+
+
+/* PREVENTIONS STARTS */
+
+.card-deck {
+    margin: 5%;
+}
+
+.card-deck .card {
+    border: none;
+    border: 0.1px solid rgb(223, 210, 210);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 8px rgba(196, 166, 166, 0.15);
+    background: #e7f1ff;
+}
+
+.img-center {
+    background: #EBE645;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-img-top {
+    height: 100px;
+    width: 100px;
+}
+
+@media (max-width:868px) {
+    .card-deck {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0%;
+    }
+    #deck-2 {
+        margin-top: 0%;
+    }
+    .card-deck .card {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* PREVENTIONS ENDS */
+
+
+/*  WORLD AND INDIA TABLE  */
+
+
+/* .panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+    margin-bottom: 0%;
+    padding: 1% 2%;
+    border: 0.1px solid rgb(223, 210, 210);
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(196, 166, 166, 0.15);
+    background: #003F5C;
+    color: #fff;
+} */
+
+
+/* .panel-heading .panel-title {
+    padding: 0%;
+    margin: 0%;
+}
+
+.hideAaroow {
+    display: none;
+} */
+
+
+/* .panel-heading #up1,
+.panel-heading #up2,
+.panel-heading #up3,
+.panel-heading #down1,
+.panel-heading #down2,
+.panel-heading #down3 {
+    font-size: 20px;
+} */
+
+
+/* #collap-btn1 #up1,
+#collap-btn2 #up2,
+#collap-btn3 #up3 {
+    display: none;
+} */
+
+
+/* #collap-btn1.hide #down1,
+#collap-btn2.hide #down2,
+#collap-btn3.hide #down3 {
+    display: none;
+} */
+
+
+/* #collap-btn1.hide #up1,
+#collap-btn2.hide #up2,
+#collap-btn3.hide #up3 {
+    display: inline-block;
+} */
+
+
+/* #collapse2 .ind-container,
+#collapse1 .world-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+
+/* Collpase Box Starts */
+
+#data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.container {
+    padding: 0%;
+    width: 100% !important;
+}
+
+.accordion-collapse {
+    border: none;
+    padding: 0%;
+    outline: none;
+}
+
+.accordion-header {
+    box-shadow: 0 6px 8px rgba(196, 166, 166, 0.15);
+}
+
+.accordion-body {
+    padding: 0%;
+}
+
+.graphs {
+    padding-bottom: 5%;
+    margin-top: 5%;
+    border-radius: 10px;
+    background: #e7f1ff;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+}
+
+#compare-state1,
+#compare-state2 {
+    border: 0.1px solid rgb(223, 210, 210);
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(196, 166, 166, 0.15);
+    background: #e7f1ff;
+    padding-left: 10px;
+}
+
+.compareStats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 3% 3% 3%;
+}
+
+.compareStats input:focus {
+    outline: none;
+}
+
+#compare-btn {
+    color: #0c63e4;
+    background: #e7f1ff;
+    margin: 5% 0 12% 0;
+}
+
+#myChart.hide {
+    display: none !important;
+}
+
+@media (min-width: 576px) {
+    .container,
+    .container-sm {
+        max-width: 650px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 850px;
+    }
+}
+
+
+/* collapse box ends */
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.searchbar input:focus {
+    outline: none;
+}
+
+#search-state,
+#search-country {
+    border: 0.1px solid rgb(223, 210, 210);
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(196, 166, 166, 0.15);
+    background: #F7F7F7;
+    padding-left: 10px;
+}
+
+.indstatic,
+.worldstatic {
+    /* overflow-x: scroll; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2% 0 2% 0;
+}
+
+.indstatic #search-state,
+.worldstatic #search-country {
+    margin: 10px 0 10px 0;
+}
+
+.indstatic table,
+.worldstatic table {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-collapse: collapse;
+}
+
+.indstatic th,
+.worldstatic th {
+    font-size: 1.2rem;
+    background: #003F5C;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.indstatic tbody tr,
+.worldstatic tbody tr {
+    background: #e7f1ff;
+}
+
+.indstatic tbody tr:hover,
+.worldstatic tbody tr:hover {
+    background: #FFF3E4;
+}
+
+.indstatic td,
+.worldstatic td {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.bar-btn {
+    color: #fff;
+}
+
+.dark {
+    color: #000;
+}
+
+.indstatic .textcolor,
+.worldstatic .textcolor {
+    color: red;
+}
+
+@media (max-width:868px) {
+    .indstatic,
+    .worldstatic {
+        padding: 3%;
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width:615px) {
+    .indstatic,
+    .worldstatic {
+        padding: 5% 1% 1% 1%;
+        font-size: 12px;
+    }
+    .indstatic td,
+    .worldstatic td {
+        font-size: 1rem;
+    }
+    .indstatic th,
+    .worldstatic th {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:520px) {
+    .indstatic,
+    .worldstatic {
+        padding: 5% 0 0 0;
+        font-size: 10px;
+    }
+    .indstatic td,
+    .worldstatic td {
+        font-size: 1rem;
+    }
+    .indstatic th,
+    .worldstatic th {
+        font-size: 1rem;
+    }
+    .searchbar {
+        padding-top: 5%;
+    }
+    #search-country {
+        width: 300px;
+    }
+    .compareStats {
+        flex-direction: column;
+    }
+    #compare-state1 {
+        margin-bottom: 10px;
+    }
+    #compare-state1,
+    #compare-state2 {
+        margin-top: 10px;
+    }
+}
+
+
+/* COMPARE DATA STARTS */
+
+#nmbData {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10% 0 5% 0;
+}
+
+#nmbData.hide {
+    display: none;
+}
+
+#second,
+#first {
+    border-radius: 8px;
+    padding: 15px;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#nmbData .stateName {
+    color: #0c63e4;
+    font-size: 25px;
+}
+
+#nmbData .totalDeaths {
+    color: red;
+}
+
+@media (max-width:520px) {
+    #nmbData {
+        flex-direction: column;
+    }
+    #first {
+        margin-bottom: 10%;
+    }
+}
+
+
+/* COMPARE DATA ENDS */

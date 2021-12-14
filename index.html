@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Covid Tracker</title>
+</head>
+
+<body>
+    <!-- nav bar starts -->
+    <nav class="nav-menu">
+        <div class="content">
+            <div class="coronaLogo">
+                <p id="live-stat">Live-Stats | C <span><img id="logo" src="/images/coronalogo.png"></span> VID-19</p>
+            </div>
+            <ul class="menu-list">
+                <div class="icon close-btn"> <i class="fas fa-times"></i></div>
+                <li><a class="link" href="#">Home</a></li>
+                <li><a class="link" href="#deck-1">Preventions</a></li>
+                <li><a class="link" href="#data">Statistic</a></li>
+                <li><a class="link" href="#">contact</a></li>
+            </ul>
+            <div class="icon bar-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+    <!-- nav bar ends -->
+
+    <!--banner starts -->
+
+    <div class="banner-img"></div>
+
+    <!-- banner ends -->
+
+    <!-- CARD DECK STARTS-->
+
+    <div class="card-deck" id="deck-1">
+        <div class="card">
+            <div class="img-center">
+                <img class="card-img-top" src="/images/hand-wash.png" alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <p class="card-text">Regularly And Thoroughly Clean Your Hands With An Alcohol-Based Hand Rub Or Wash Them With Soap And Water. Why? Washing Your Hands With Soap And Water Or Using Alcohol-Based Hand Rub Kills Viruses That May Be On Your Hands</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-center">
+                <img class="card-img-top" src="/images/mask.png" alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <p class="card-text">Wear A Mask When Physical Distancing Is Not Possible. Cover Your Nose And Mouth With Your Bent Elbow Or A Tissue When You Cough Or Sneeze.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-center">
+                <img class="card-img-top" src="/images/keep-distance.png" alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <p class="card-text">Maintain At Least 1 Metre (3 Feet) Distance Between Yourself And Others. Why? When Someone Coughs, Sneezes, Or Speaks They Spray Small Liquid Droplets From Their Nose Or Mouth Which May Contain Virus</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-deck" id="deck-2">
+        <div class="card">
+            <div class="img-center">
+                <img class="card-img-top" src="/images/doctor.png" alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text">If You Have A Fever, Cough And Difficulty Breathing, Seek Medical Attention, But Call By Telephone In Advance If Possible And Follow The Directions Of Your Local Health Authority. Why? National And Local Authorities Will Have The Most
+                    Up To Date Information On The Situation In Your Area.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-center">
+                <img class="card-img-top" src="/images/stay-home.png" alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text">Stay Home And Self-Isolate Even With Minor Symptoms Such As Cough, Headache, Mild Fever, Until You Recover. Have Someone Bring You Supplies. If You Need To Leave Your House, Wear A Mask To Avoid Infecting Others..</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-center">
+                <img class="card-img-top" src="/images/no-touch.png" alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text">Avoid Touching Eyes, Nose And Mouth. Why? Hands Touch Many Surfaces And Can Pick Up Viruses. Once Contaminated, Hands Can Transfer The Virus To Your Eyes, Nose Or Mouth. From There, The Virus Can Enter Your Body And Infect You</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD DECK ENDS -->
+
+
+    <!-- collapse starts -->
+
+    <section id="data">
+        <div class="container">
+            <div class="accordion" id="accordionSection">
+                <div class="accordion-item mb-3">
+                    <h4 class="accordion-header">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">Covid-19 | World Stats</button>
+                    </h4>
+                    <div class="accordion-collapse collapse" id="collapseOne" data-bs-parent="#accordionSection">
+                        <div class="accordion-body">
+                            <div class="world-container">
+                                <div class="searchbar">
+                                    <input id="search-country" type="text" placeholder="Search Country..." onkeyup="worldSearchBox()" autocomplete="off">
+                                </div>
+                                <div class="worldstatic">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Country</th>
+                                                <th>Total Cases</th>
+                                                <th>New Cases</th>
+                                                <th>Total Deaths</th>
+                                                <th>New Deaths</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="worldtbody">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item  mb-3">
+                    <h2 class="accordion-header">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Covid-19 | India Stats</button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="collapseTwo" data-bs-parent="#accordionSection">
+                        <div class="accordion-body">
+                            <div class="ind-container">
+                                <div class="searchbar">
+                                    <input id="search-state" type="text" placeholder="Search State..." onkeyup="indSearchBox()" autocomplete="off">
+                                </div>
+                                <div class="indstatic">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>State</th>
+                                                <th>Total Cases</th>
+                                                <th>Foreign Cases</th>
+                                                <th>Total Deaths</th>
+                                                <th>Recovered</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="indtbody">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button type="button" id="collap-btn" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">Compare Across | States</button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="collapseThree" data-bs-parent="#accordionSection">
+                        <div class="accordion-body graphs">
+                            <form class="compareStats" autocomplete="off">
+                                <input type="text" id="compare-state1" autocomplete="false" placeholder="State...">
+                                <input type="text" id="compare-state2" autocomplete="false" placeholder="State...">
+                            </form>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-primary btn-info" type="button" id="compare-btn" onclick="compareState()">Compare</button>
+                            </div>
+                            <div>
+                                <canvas id="myChart" class="hide"></canvas>
+                            </div>
+                            <div id="nmbData" class="hide">
+                                <div id="first">
+                                    <div class="stateName mb-3">Bihar</div>
+                                    <div class="totalCases mb-3"><span>Total Cases : </span>1000</div>
+                                    <div class="totalDeaths mb-3"><span>Total Deaths : </span>500</div>
+                                    <div class="recovered"><span>Total Recovered : </span>500</div>
+                                </div>
+                                <div id="second">
+                                    <div class="stateName mb-3"></div>
+                                    <div class="totalCases mb-3"></div>
+                                    <div class="totalDeaths mb-3"></div>
+                                    <div class="recovered"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- collapse ends -->
+
+
+    <!-- javaScript -->
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>
