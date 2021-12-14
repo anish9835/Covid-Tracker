@@ -96,7 +96,7 @@ body {
 }
 
 .banner-img {
-    background: url('/images/Background1.jpg');
+    background: url('images/Background1.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
