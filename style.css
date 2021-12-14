@@ -19,7 +19,6 @@ body {
     z-index: 2;
     padding: 8px 40px 0 40px;
     height: 55px;
-    transition: 0.3s all ease;
 }
 
 .nav-menu.sticky {
@@ -27,6 +26,9 @@ body {
     z-index: 2;
 }
 .accordion-button:hover {
+    z-index: 1;
+}
+.accordion-button:focus {
     z-index: 1;
 }
 
