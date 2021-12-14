@@ -24,7 +24,10 @@ body {
 
 .nav-menu.sticky {
     background: #e7f1ff;
-    z-index: 5;
+    z-index: 2;
+}
+.accordion-button:hover {
+    z-index: 1;
 }
 
 .nav-menu .content {
@@ -102,7 +105,7 @@ body {
     background: url('images/Background1.jpg');
     height: 100vh;
     background-repeat: no-repeat;
-/*     background-attachment: fixed; */
+    background-attachment: fixed;
     background-size: cover;
     background-position: top;
 }
